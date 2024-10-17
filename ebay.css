@@ -1,0 +1,621 @@
+/* Logo size */
+.ebay-logo {
+  width: 120px; /* Adjust as needed */
+}
+
+.custom-hr {
+  border: none; /* Remove default border */
+  margin: 3px; /* Adjust the space above and below */
+  height: 0; /* Ensure height is minimal */
+}
+
+/* Category select width adjustment */
+.category-select {
+  width: auto;
+}
+
+/* search part */
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 2px solid #000000;
+  border-radius: 25px;
+  padding: 5px 10px;
+  width: 1000px; /* Adjust width as needed */
+  
+}
+
+.search-bar .form-control {
+  border: none;
+  outline: none;
+  padding-left: 1px;
+  flex-grow: 1;
+  font-size: 14px;
+  height: 25px;
+}
+
+.search-bar .form-select {
+  margin-left: auto; /* Aligns dropdown to the right */
+  width: 0px; /* Adjust this value to make it smaller */
+  border: none;
+  outline: none;
+  background-color: #f8f9fa;
+  font-size: 14px;
+}
+
+.search-bar .input-group-text {
+  background-color: #f8f9fa;
+  border: none;
+}
+
+/* Optional styles for icons and dropdown arrow */
+.bi-search {
+  font-size: 18px;
+  color: #6c757d;
+}
+
+
+  .search-bar .btn {
+      border-radius: 50px;
+      padding-left: 20px;
+      padding-right: 20px;
+      flex-grow: 0; /* Keeps the button size fixed */
+      height: 30px; /* Matches the height of input and select */
+  }
+
+  .advanced-link {
+      margin-left: 10px;
+      white-space: nowrap;
+  }
+
+
+/* header part */
+
+.header-menu a {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+/* Optional custom styles for dropdowns */
+.header-menu {
+  background-color: #fff; /* Optional: Adjust as needed */
+}
+
+.nav-link {
+  color: black; /* Black text color for main menu items */
+  transition: color 0.3s ease;
+  text-decoration: none; /* Remove underline */
+}
+
+.nav-link:hover {
+  color: #333; /* Darker shade on hover, optional */
+}
+
+.nav-item {
+  position: relative; /* To position submenu correctly */
+}
+
+.submenu {
+  display: none; /* Hide submenu by default */
+  position: absolute; /* Position submenu relative to parent */
+  top: 100%; /* Position below the parent item */
+  left: 0; /* Align with the left edge of the parent */
+  background-color: #fff; /* Background color for the submenu */
+  border: 1px solid #ddd; /* Border for the submenu */
+  border-radius: 0.25rem; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  padding: 0; /* Remove padding from submenu */
+  z-index: 1000; /* Ensure submenu appears above other content */
+}
+
+.nav-item:hover .submenu {
+  display: block; /* Show submenu on hover */
+}
+
+.submenu-item {
+  color: black; /* Black text color for submenu items */
+  padding: 0.5rem 1rem; /* Padding for submenu items */
+  text-decoration: none; /* Remove underline */
+  display: block; /* Ensure submenu items stack vertically */
+}
+
+.submenu-item:hover {
+  background-color: #f8f9fa; /* Light background on hover */
+}
+
+
+/* Mega menu styling */
+/*new sub menu / mega menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  left: -120px;
+  right: 0;
+  width: 100vw;
+  height: 250px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 2px solid #ccc;
+}
+
+/* Show mega menu on hover 
+.nav-item:hover .dropdown-menu {
+  display: block;
+  
+}*/
+
+
+.custom-width {
+  width: 300px;
+}
+
+
+/* Ensure dropdown is visible within the viewport */
+.nav-item {
+  position: relative; /* Position relative to ensure dropdown positioning */
+  
+}
+
+
+/* Optional: Responsive adjustments */
+@media (max-width: 767px) {
+  .dropdown-menu {
+    width: 100%; /* Full width on small screens */
+    padding: 10px;
+  }
+
+  .custom-width {
+    width: 100%; /* Ensure custom-width columns adjust to full width on small screens */
+  }
+}
+
+/* Styling for images */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* shop now under slider */
+
+   /* Custom box styling */
+.custom-box {
+  max-width: 100%;
+  height: 120px;
+  background-color: #3e2723; /* Chocolate color */
+  color: white;
+  border-radius: 15px; /* Rounded corners for the box */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin: 0 auto; /* Center the box horizontally */
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .custom-box {
+      max-width: 1200px; /* Set the width for larger screens */
+  }
+}
+
+.custom-box h2 {
+  margin: 0;
+  font-size: 1.5rem; /* Responsive font size */
+}
+
+.custom-box p {
+  margin: 0;
+  font-size: 1rem; /* Responsive font size */
+}
+
+.btn-custom {
+  background-color: #3e2723; /* Chocolate color */
+  color: white;
+  border: 2px solid white; /* White border */
+  border-radius: 25px; /* Makes the button circular */
+  padding: 10px 20px; /* Adjust padding to fit the circle */
+  text-decoration: none;
+  display: inline-flex; /* Ensures text is centered */
+  align-items: center;
+  justify-content: center;
+  font-size: 16px; /* Adjust font size as needed */
+  width: 150px; /* Set a fixed width to maintain the circular shape */
+  text-align: center; /* Center the text */
+}
+
+.btn-custom:hover {
+  background-color: white; /* White background on hover */
+  color: #3e2723; /* Chocolate color text on hover */
+  border-color: #3e2723; /* Chocolate color border on hover */
+}
+
+/* Remove left margin from container and align it to the right */
+.container-no-left-margin {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+}
+
+
+
+  /* image css */
+      /* Custom styling for the image gallery */
+      .gallery-container {
+        overflow-x: auto; /* Enable horizontal scrolling */
+        white-space: nowrap; /* Prevent line breaks */
+        padding-left: 20px; /* Left padding for the container */
+    }
+
+    .gallery-item {
+        display: inline-block; /* Align items horizontally */
+        text-align: center; /* Center-align text */
+        margin-right: 20px; /* Space between items */
+    }
+
+    .gallery-item img {
+        width: 150px; /* Adjust the image size as needed */
+        height: 150px; /* Maintain aspect ratio */
+        border-radius: 50%; /* Circular images */
+        transition: transform 0.3s ease; /* Smooth zoom effect on hover */
+    }
+
+    .gallery-item img:hover {
+        transform: scale(1.1); /* Slight zoom effect on hover */
+    }
+
+    .gallery-item p {
+        margin-top: 5px; /* Space between image and caption */
+        margin-bottom: 0; /* Remove bottom margin */
+        color: black;
+        
+    }
+
+    /* Remove underline from links */
+a {
+  text-decoration: none;
+  color: inherit; /* Optional: to make sure the color of the text is the same as its container */
+}
+
+a:hover {
+  text-decoration: none; /* Ensure underline is removed on hover as well */
+}
+
+
+/* footer section for css */
+ /* Custom CSS */
+ footer {
+  padding: 50px 0; /* Increase the height of the footer */
+}
+footer h6 {
+  font-size: 0.875rem; /* Smaller heading font size */
+}
+footer ul li a {
+  font-size: 0.875rem; /* Smaller link font size */
+}
+footer p {
+  font-size: 0.75rem; /* Smaller footer bottom text font size */
+}
+.form-select {
+  font-size: 0.875rem; /* Smaller font size for dropdown */
+}
+
+
+
+/* Style for the back to top button */
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  z-index: 1000;
+  border: none;
+  outline: none;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%; /* Make button round */
+  font-size: 20px; /* Adjust font size for the icon */
+  text-align: center;
+  line-height: 0; /* Remove extra line height */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+  transition: background-color 0.3s, transform 0.3s; /* Add transition */
+}
+
+/* Icon styling */
+#back-to-top i {
+  font-size: 24px; /* Adjust icon size */
+}
+
+/* Show the button when the user scrolls down 20px from the top of the document */
+#back-to-top.show {
+  display: block;
+}
+
+/* Hover effect */
+#back-to-top:hover {
+  background-color: #333; /* Darker background on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* help button and modal */
+/* Style for the back to top button */
+#back-to-top {
+  position: fixed;
+  bottom: 80px; /* Adjusted to make space for the help button */
+  right: 20px;
+  z-index: 1000;
+  background-color: #555;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the back to top button hover effect */
+#back-to-top:hover {
+  background-color: #333;
+}
+
+
+
+    /* Style for the help button */
+    #help-button {
+      position: fixed;
+      bottom: 20px; /* Adjusted to make space above */
+      right: 20px;
+      z-index: 1000;
+      background-color: #ffffff;
+      color: rgb(5, 3, 3);
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Style for the help button hover effect */
+    #help-button:hover {
+      background-color: #4f8dcf;
+    }
+
+
+    /* ebay drop down list */
+    /* Dropdown Container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Button */
+.dropdown-button {
+  background-color: transparent;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  font-size: 13px;
+  text-decoration: underline;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Optional: Change button color on hover */
+.dropdown:hover .dropdown-button {
+  background-color: #ddd;
+}
+
+/* categories sub menu and menu */ 
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  font-size: 12px;  
+  border: none;
+  outline: none;
+  width: 80px;
+  color: rgb(0, 0, 0);
+  
+  background-color: #ffffff;
+  font: inherit;
+  margin: 0;
+  cursor: pointer;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(255, 255, 255);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100%;
+  width: 900px;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Create columns that float next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  background-color: #f5f2f2;
+  height: 170px;
+  font-size: 13px;
+}
+
+
+.column a {
+  float: none;
+  color: black;
+  padding: 5px 0;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 13px;
+}
+
+.column a:hover {
+  background-color: #ddd;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+      width: 100%;
+      height: auto;
+  }
+}
+
+/* Base styles for the select element */
+.responsive-select {
+  height: 30px; /* Increased height for better visibility */
+  font-size: 14px; /* Font size for readability */
+  width: 100%; /* Full width to adapt to container */
+  max-width: 200px; /* Maximum width to limit expansion */
+  border: none; /* Remove border */
+  background-color: #f8f9fa; /* Light background color */
+  padding: 5px; /* Padding for better appearance */
+  box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .responsive-select {
+    font-size: 12px; /* Smaller font size on smaller screens */
+    height: 25px; /* Adjust height if needed */
+    max-width: 150px; /* Smaller maximum width on smaller screens */
+  }
+}
+
+@media (max-width: 400px) {
+  .responsive-select {
+    font-size: 10px; /* Further reduce font size on very small screens */
+    height: 20px; /* Adjust height if needed */
+    max-width: 100px; /* Further reduce maximum width */
+  }
+}
+
+
+
+/* Ensure the dropdown menu is positioned correctly */
+.dropdown-menu {
+  display: none; /* Hide dropdown initially */
+}
+
+.dropdown-menu.show {
+  display: block; /* Show dropdown when active */
+}
+
+.dropdown-toggle::after {
+  display: none; /* Remove default dropdown indicator */
+}
+
+
+/* flag */
+
+/* Custom CSS to Style Dropdown */
+.dropdown-menu1 {
+  height: 400px; /* Adjust based on your preference */
+  overflow-y: auto; /* Enable scrolling if the content exceeds max-height */
+  width: 600px;
+  background-color: #f1f1f1;
+  float: right;
+}
+
+.dropdown-toggle::after {
+  display: none; /* Hide the default dropdown indicator */
+}
+
+.dropdown-item1 {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-item1 i {
+  margin-right: 10px; /* Space between flag icon and text */
+}
+
+.btn-secondary {
+  width: 150px; /* Match the width of the dropdown */
+}
+
+
+
+
+
+
